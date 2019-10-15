@@ -12,8 +12,8 @@ Proyecto generado con  [Angular CLI]  version 8.3.6.
 
 ## Iniciar la aplicación
 
-Ejecute `npm start` Navegue a `http: //localhost:4200/`.. 
+ejecute `npm start` Navegue a `http: //localhost:4200/`.. 
 
-## Compilacion de produccion
+## Compilación de producción
 
-Ejecute `ng build` para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist /`. Use el indicador `--prod` para una compilación de producción
+ejecute `ng build` para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist /`. Use el indicador `--prod` para una compilación de producción
