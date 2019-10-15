@@ -1,0 +1,27 @@
+.menu {
+    margin-top:  1rem;
+    margin-left: 3rem;
+}
+
+.menu .btn-menu {
+    display: none;
+}
+
+.menu .title {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+    .menu .title {
+        display: none;
+    }
+
+    .menu .btn-menu {
+        display: block;
+    }  
+
+}

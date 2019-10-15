@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fc;
+    font-family: sans-serif;
+}
+
+nav {
+    background: #023694;
+}
+
+.card-header {
+    background: #fff;
+}
+
+
+
+
+
+.padding-bottom-15 {
+    padding-bottom: 15px;
+}
+
+
+
+.padding-15 {
+    padding: 15px;
+}
+
+
+
+
+
+
+.margin_bottom_4 {
+    margin-bottom: 4px;
+}
+
+.button_wrap {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+ul li {
+    list-style:  none;
+}
+
+
+
+label {
+    color:#11a2d2;
+    font-weight: bold;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+.font-12 {
+    font-size: 12px;
+}
+
+
+.amenities img {
+    width: 18px;
+    margin-right: 15px;
+}
+
+.img_hotel {
+   width: 100%
+}
+
+.stars img {
+    width: 15px;
+}
+
+
+.vertical_separator {
+    border-top: 1px dashed black;
+}
+
+.btn-offer {
+    width: 80%
+}
+
+.btn-color-blue {
+    background: #032e7b;
+    color: white;
+}
+
+.price  {
+    color: #f57304;
+    display: inline-block;
+}
+
+strong {
+    font-size: 33px;
+}
+
+.country_money {
+    color: #f57304;
+    display: inline-block;
+    vertical-align: text-bottom
+}
+
+.price_container {
+    text-align: center;
+    border-left-style: dotted;
+    border-left-color: #CCC;
+    border-left-width: 1px;
+}
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+@media (max-width: 768px){
+
+    .wrapper {
+        padding-top: 80px;
+    }
+
+
+    .logo_almundo {
+        width: 170px;
+    }
+
+    .price_container {
+        padding: 20px;
+
+    }
+
+    .detail_container {
+        padding: 15px;
+    }
+
+    .price_container {
+        border-left-style: none;
+        border-left-color: none;
+    }
+
+    .label_offer {
+        padding: 5px;
+        border-top-style: dotted !important;
+        border-top-color: #CCC !important;
+        border-top-width: 1px;
+    }
+
+    .collapse-main {
+        display: block
+    }
+
+    .title_nav {
+        align-items: center;
+    }
+}

@@ -1,0 +1,41 @@
+<div class="card border-light mb-3 animated fadeIn fast" style="width:100%;box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.1)">
+    <div class="card-body text-primary" style="padding: 0.2rem">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+                <img style="width: inherit; max-height: 190px" [src]="getHotelImagePath(hotel.image)" alt="">
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row detail_container">
+                    <div class="col-md-12">
+                        <label>{{hotel.name}}</label>
+                    </div>
+                    <div class="col-md-12 stars padding-bottom-15 ">
+                        <img *ngFor="let star of stars" src="assets/icons/filters/star.svg" alt="">
+                    </div>
+                    
+                    <div class="col-md-12 amenities">
+                        
+                        <img *ngFor="let amenity of hotel.amenities" [src]="getAmenitiesImagePath(amenity)" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 price_container padding-15">
+                <div class="col-sm-8 offset-sm-2 label_offer">
+                    <p style="font-size: 11px" class="text-center">Precio por noche por habitacion</p>
+                </div>
+                <div class="col-md-12">
+                    <div class="country_money">
+                        ARS
+                    </div>
+                    <div class="price">
+                        <strong>{{ hotel.price | number:'1.0-0'}}</strong> 
+                    </div>
+                </div>
+                <div class="col-sm-12 show_offer_hotel">
+                    <button class="btn btn-offer btn-color-blue">Ver hotel</button>
+                </div>
+            </div>      
+        </div>              
+    </div>
+</div>

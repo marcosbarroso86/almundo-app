@@ -1,0 +1,11 @@
+.searcher_wrapper {
+    margin-top:  1rem;
+    margin-left: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .searcher_wrapper {
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+}

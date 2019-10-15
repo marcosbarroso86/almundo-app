@@ -1,0 +1,80 @@
+<div class="menu">
+    <div class="card border-light mb-1" style="width:100%;box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.1)">
+        <div class="card-body text-primary title" style="padding: 0.8rem">
+            <label>Filtros</label>
+        </div>
+        <button data-toggle="collapse" data-target="#starsOptions , #searchOption" 
+                class="btn  btn-block btn-menu">
+                    <label>Filtrar 
+                        <img width="10" src="assets/icons/filters/arrow-down.png">
+                    </label>
+        </button>
+    </div>
+    <div id="searchOption" class="card border-light mb-1 collapse show" stylem="width:100%;box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.1)">
+        <div class="card-header text-primary" style="padding: 0.8rem;">
+            <div class="d-flex flex-row bd-highlight">
+                <div class="p-1 bd-highlight">
+                    <img class="icon_star" style="width: 15px" src="assets/icons/filters/search.svg" alt="">
+                </div>
+                <div class="p-1 bd-highlight">
+                    <label>Nombre de hotel</label>
+                </div>
+                <div class="ml-auto">
+                    <button data-toggle="collapse" data-target="#search" class="btn"> 
+                            <img width="10" src="assets/icons/filters/arrow-up.png">    
+                            <!-- <img *ngIf="!switch" width="10" src="assets/icons/filters/arrow-up.png"> -->    
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="search" class="card-body text-primary collapse show" style="padding: 1rem;">
+            <input type="text" [(ngModel)]="name" #input placeholder="ingrese el nombre del hotel a buscar" style="width: 65%; margin-right: 20px;">
+            <button (click)="search()" class="btn btn-color-blue btn-sm"> Aceptar </button>                                
+        </div>
+    </div>
+    <div id="starsOptions" class="card border-light mb-1 collapse show" style="width:100%;box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.1)">
+        <div class="card-header text-primary" style="padding: 0.8rem;">
+            <div class="d-flex flex-row bd-highlight">
+                <div class="p-1 bd-highlight">
+                    <img style="width: 15px" src="assets/icons/filters/star.svg" alt="">
+                </div>
+                <div class="p-1 bd-highlight">
+                    <label>Estrellas</label>
+                </div>
+                <div class="ml-auto">
+                    <button data-toggle="collapse" data-target="#stars" class="btn"> 
+                        <img width="10" src="assets/icons/filters/arrow-up.png">    
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="stars" class="card-body text-primary collapse show" style="padding: 0.8rem">
+            <ul>
+                <li>
+                    <input  type="checkbox" #allStar (change)="selected(allStar.value , $event)" value="">
+                    <label class="font-bold font-12" for="a">Todas las estrellas</label>
+                </li>
+                <li>
+                    <input type="checkbox" #oneStar (change)="selected(oneStar.value , $event)" value="1">
+                    <img  style="width: 10px" src="assets/icons/filters/star.svg" alt="">   
+                </li>
+                <li> 
+                    <input type="checkbox" #twoStar (change)="selected(twoStar.value , $event)" value="2">
+                    <img *ngFor="let n of [1,2]" style="width: 10px" src="assets/icons/filters/star.svg" alt="">
+                </li>
+                <li>
+                    <input type="checkbox" #threeStar (change)="selected(threeStar.value , $event)" value="3">
+                    <img *ngFor="let n of [1,2,3]" style="width: 10px" src="assets/icons/filters/star.svg" alt="">
+                </li>
+                <li>
+                    <input type="checkbox" #fourStar (change)="selected(fourStar.value , $event)" value="4">
+                    <img *ngFor="let n of [1,2,3,4]" style="width: 10px" src="assets/icons/filters/star.svg" alt="">
+                </li>
+                <li>
+                    <input type="checkbox" #fiveStar (change)="selected(fiveStar.value , $event)" value="5">
+                    <img *ngFor="let n of [1,2,3,4,5]" style="width: 10px" src="assets/icons/filters/star.svg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
