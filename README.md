@@ -1,4 +1,4 @@
-# Almundoweb
+# almundo-app
 
 Proyecto generado con  [Angular CLI]  version 8.3.6.
 
@@ -6,11 +6,11 @@ Proyecto generado con  [Angular CLI]  version 8.3.6.
 
 `git clone https://github.com/marcosbarroso86/almundo-app.git`
 
-## Dependencias
+## Instalar dependencias
 
 `npm install`
 
-## Server
+## Iniciar la aplicación
 
 Ejecute `npm start` Navegue a `http: //localhost:4200/`.. 
 
